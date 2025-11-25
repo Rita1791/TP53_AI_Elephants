@@ -31,3 +31,14 @@ TP53_MSA.fasta:
 - Location: results/msa/
 - Created: 25-11-2025
 
+TP53_tree.png:
+- Source: MEGA Phylogenetic Tree (Neighbor-Joining)
+- Input: results/msa/TP53_MSA.fasta (protein alignment)
+- Substitution Model: JTT (or Poisson)
+- Bootstrap: 100 replicates
+- Location: results/phylogeny/
+- Created: 25-11-2025
+
+TP53_tree.nwk (if present):
+- Source: Newick export of same tree from MEGA
+- Purpose: Allows re-plotting & further analyses
