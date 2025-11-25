@@ -2,24 +2,32 @@ Human TP53:
 - Source: UniProt
 - ID: P04637
 - File: data/raw/human_tp53.fasta
-- Downloaded: 25-11-2025
+- Downloaded: 20-11-2025
 
 Asian Elephant TP53-like proteins:
 - Source: NCBI Protein BLAST (blastp)
 - Query: Human TP53 (P04637)
 - Organism filter: Elephas maximus
 - File: data/raw/asian_tp53_hits.fasta
-- Downloaded: DD-MM-2025
+- Downloaded: 23-11-2025
 
 African Elephant TP53-like proteins:
 - Source: NCBI Protein BLAST (blastp)
 - Query: Human TP53 (P04637)
 - Organism filter: Loxodonta africana
 - File: data/raw/african_tp53_hits.fasta
-- Downloaded: DD-MM-2025
+- Downloaded: 23-11-2025
 
 TP53_all_sequences.fasta:
 - Source: Combined manually using Google Colab script
 - Files merged: human_tp53.fasta, asian_tp53_hits.fasta, african_tp53_hits.fasta
 - Location: data/processed/
 - Created: 25-11-2025
+
+TP53_MSA.fasta:
+- Source: Muscle MSA (Google Colab)
+- Input: data/processed/TP53_clean.fasta
+- Tool: MUSCLE v3 (Colab, apt-get install muscle)
+- Location: results/msa/
+- Created: 25-11-2025
+
