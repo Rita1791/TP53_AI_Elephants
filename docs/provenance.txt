@@ -29,7 +29,7 @@ TP53_MSA.fasta:
 - Input: data/processed/TP53_clean.fasta
 - Tool: MUSCLE v3 (Colab, apt-get install muscle)
 - Location: results/msa/
-- Created: 25-11-2025
+- Created: 26-11-2025
 
 TP53_tree.png:
 - Source: MEGA Phylogenetic Tree (Neighbor-Joining)
@@ -37,8 +37,22 @@ TP53_tree.png:
 - Substitution Model: JTT (or Poisson)
 - Bootstrap: 100 replicates
 - Location: results/phylogeny/
-- Created: 25-11-2025
+- Created: 26-11-2025
 
 TP53_tree.nwk (if present):
 - Source: Newick export of same tree from MEGA
 - Purpose: Allows re-plotting & further analyses
+
+tp53_features_with_similarity.csv:
+- Tool: Python (Biopython + custom script in Colab)
+- Input: data/processed/TP53_clean.fasta
+- Features: length, AA composition, GC-like, identity_to_human
+- Location: results/ML/
+- Created: 29-11-2025
+
+identity_barplot.png:
+- Tool: Python (matplotlib) in Colab
+- Input: results/ML/tp53_features_with_similarity.csv
+- Description: Bar plot of top TP53/RTGs by % identity to human TP53
+- Location: results/ML/
+
