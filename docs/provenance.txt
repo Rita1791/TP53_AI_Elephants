@@ -18,3 +18,8 @@ African Elephant TP53-like proteins:
 - File: data/raw/african_tp53_hits.fasta
 - Downloaded: DD-MM-2025
 
+TP53_all_sequences.fasta:
+- Source: Combined manually using Google Colab script
+- Files merged: human_tp53.fasta, asian_tp53_hits.fasta, african_tp53_hits.fasta
+- Location: data/processed/
+- Created: 25-11-2025
